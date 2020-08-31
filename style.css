@@ -1,0 +1,51 @@
+/* Problems to ask about: changing image size, pointer isn't working on id's - just classes
+​
+// Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+You could do:
+@media (min-width: 0px) { ... }
+​
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+​
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+​
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+​
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... } */
+​
+@media (min-width: 0px) {
+  h1 {
+    font-size: 25px;
+    margin-left: 15px;
+  }
+  h2, h3 {
+    font-size: 25px;
+  }
+}
+​
+@media (min-width: 576px) { 
+  h1 {
+    font-size: 32px;
+  }
+}
+​
+​
+​
+.title-1,
+.title-2,
+.title-3,
+#professional-request,
+#personal-request,
+#robot-checkbox {
+  cursor: pointer;
+  user-select: none;
+}
+​
+i {
+  margin-right: 6px;
+}
+​
